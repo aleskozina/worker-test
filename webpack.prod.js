@@ -11,16 +11,6 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.js$/,
-                include: [path.resolve(__dirname, 'src')],
-                loader: 'babel-loader',
-                options: {
-                    presets: [
-                        'env',
-                    ],
-                }
-            },
-            {
                 test: /worker\.js$/,
                 use: {
                     loader: 'worker-loader',
